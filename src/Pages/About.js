@@ -1,6 +1,8 @@
 import React from 'react';
+import { Title } from './index';
+
 export const About = () => 
 
     (
-      <div>About</div>
+      <Title name="About" />
     )

@@ -1,8 +1,11 @@
 import React from 'react';
+import { Title } from './index';
 export const Home = () => 
 
     (
-      <div>Home</div>
+      
+      <Title name="Home" />
+     
     )
 
 

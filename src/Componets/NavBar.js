@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ButtonStyels } from './ButtonStyels';
+
 import styled from "styled-components";
 
 export const NavBar = () =>
@@ -13,11 +14,11 @@ Creative Commons (Attribution 3.0 Unported);
 https://www.iconfinder.com/Makoto_msk */}
 
 
-        <Link to='/' className='ml-auto'>Home</Link>
-        <Link to='/ProdectList' className="ml-auto">Prodects</Link>
-        <Link to='/About' className="ml-auto">About</Link>
+        <Link to='/'>Home</Link>
+        <Link to='/ProdectList' className="ml-3">Prodects</Link>
+        <Link to='/About' className="ml-3">About</Link>
         
-        <Link to="/cart" className="ml-auto">
+        <Link to="/Cart" className="ml-auto">
           <ButtonStyels>
             <span className="mr-2">
               <i className="fas fa-cart-plus " />
