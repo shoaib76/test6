@@ -1,18 +1,11 @@
 import React from 'react';
-import { Home , About, ProdectList, Cart, NavBar, Default } from './Pages/index';
+import { Home , About, ProdectList, Cart, NavBar, Default, ProductProvider, Details } from './Pages/index';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import './App.css';
 
 
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-  
-}
- 
- from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 
 
@@ -25,16 +18,18 @@ function App() {
 
        
     
-    <Router>
+    <ProductProvider>
      <NavBar/>
      <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path='/About' element={<About/>} />
       <Route path='/ProdectList' element={<ProdectList/>} />
       <Route path='/Cart' element={<Cart/>} />
-      <Route path='*' element={ <Default/> } />
+      <Route path='/details' element={<Details/>} />
+      <Route path="*"element={ <Default/>} />
      </Routes>
-    </Router> 
+    </ProductProvider> 
+    
     
   );
 }
