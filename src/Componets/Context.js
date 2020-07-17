@@ -19,7 +19,7 @@ export const ProductProvider = ({ children }) => {
        // addNew:addNew,
        // removePd:removePd
     }
-      const [ appState, setState ] = useState(initstore);
+      const [ appState ] = useState(initstore);
     return(
 
         <ProductContext.Provider value={appState}>

@@ -1,6 +1,6 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 
-import styled from 'styled-components';
+
 import { ProductContext, Product, Title } from './index';
 
 
@@ -21,7 +21,7 @@ return (
             <div className="productcontanor">
             
       {Object.entries(data.products).map(([slug, data1]) => (
-         <Product product={data1} className="productcontanor"/>
+         <Product product={data1}/>
       ))}
     
            </div>
@@ -35,9 +35,3 @@ return (
 
 
 
-/*<li key={slug}>
-<Link to={`/launch/${slug}`}>
-  <h3>{name}</h3>
-  <img src={img} alt={name} height={300}/>
-</Link>
-</li>*/
