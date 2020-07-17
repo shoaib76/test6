@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
-import { ProductContext } from './index';
+import React from 'react';
+
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 
 
 export const Product = (props) => {
-    const data  = useContext(ProductContext);
+    //const data  = useContext(ProductContext);
     const { name, img } = props.product;
    // console.log(name)
 
