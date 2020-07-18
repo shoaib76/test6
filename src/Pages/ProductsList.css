@@ -1,5 +1,6 @@
 .productcontanor {
 
     display: flex;
+    display: grid;
     
 }
